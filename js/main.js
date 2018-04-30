@@ -7,6 +7,7 @@ var prevX, prevY;
 function setup() {
 	createCanvas(canvasW, canvasH);
 	pathCanvas = createGraphics(width, height);
+	pathCanvas.pixelDensity(1);
 	pathCanvas.background(canvasBackground);
 }
 
