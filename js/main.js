@@ -58,6 +58,7 @@ function drawBall2(){
 
 function drawPath(){
 	pathCanvas.push();
+	pathCanvas.translate(0,0);	
 	pathCanvas.stroke(pathColor.r, pathColor.g, pathColor.b, pathColor.a);
 	pathCanvas.line(prevX, prevY, ball2.x, ball2.y);
 	prevX = ball2.x;
