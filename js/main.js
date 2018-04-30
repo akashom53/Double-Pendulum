@@ -6,14 +6,14 @@ var prevX, prevY;
 
 function setup() {
 	createCanvas(canvasW, canvasH);
-	pathCanvas = createGraphics(canvasW, canvasH);
+	pathCanvas = createGraphics(width, height);
 	pathCanvas.background(canvasBackground);
 }
 
 function draw() {
 	// Draw Canvas
-	// imageMode(CORNER);
-	image(pathCanvas, 0, 0, canvasW, canvasH);
+	imageMode(CORNER);
+	image(pathCanvas, 0, 0, width, height);
 
 	// Draw Pendulum
 	updatePhysics();
