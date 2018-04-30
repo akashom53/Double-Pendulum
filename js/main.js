@@ -12,7 +12,7 @@ function setup() {
 
 function draw() {
 	// Draw Canvas
-	imageMode(CORNER);
+	// imageMode(CORNER);
 	image(pathCanvas, 0, 0, canvasW, canvasH);
 
 	// Draw Pendulum
